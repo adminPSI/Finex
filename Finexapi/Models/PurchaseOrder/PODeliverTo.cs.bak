@@ -1,0 +1,36 @@
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace FinexAPI.Models.PurchaseOrder
+{
+    [Table("PODeliverTo")]
+    public class PODeliverTo:Common
+    {
+        [Key]
+        [Column("ID")]
+        public int ID { get; set; }
+
+        [Column("DeliverTo")]
+        public string DeliverTo { get; set; }
+
+        [Column("AddressLine1")]
+        public string AddressLine1 { get; set; }
+
+        [Column("AddressLine2")]
+        public string AddressLine2 { get; set; }
+
+        [Column("City")]
+        public string City { get; set; }
+
+        [Column("State")]
+        public string State { get; set; }
+
+        [Column("Zip")]
+        public string Zip { get; set; }
+
+        [Column("InActive")]
+        public bool InActive { get; set; }
+
+
+    }
+}

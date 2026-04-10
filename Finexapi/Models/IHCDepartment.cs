@@ -1,0 +1,39 @@
+﻿using System;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace FinexAPI.Models
+{
+    [Table("DEPARTMENT")]
+    public class IHCDepartment : Common
+    {
+        [Column("IHC_DEPARTMENT")]
+        public int Id { get; set; }
+
+        [Column("CODE")]
+        public string code { get; set; }
+
+        [Column("IHC_DEPARTMENT_DESCRIPTION")]
+        public string description { get; set; }
+
+        [Column("REV_CHECK")]
+        public string revenueCheck { get; set; }
+
+        [Column("EXP_CHECK")]
+        public string expenseCheck { get; set; }
+
+        [Column("SALARYBENEFITS")]
+        public string salaryBenefits { get; set; }
+
+        [Column("ACTIVE_IND")]
+        public string isActive { get; set; }
+
+        [Column("STARTDATE")]
+        public DateTime startDate { get; set; }
+
+        [Column("ENDDATE")]
+        public DateTime? endDate { get; set; }
+
+        [Column("ORG_ACCOUNT_ID")]
+        public int OrgAccountId { get; set; }
+    }
+}

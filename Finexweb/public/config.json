@@ -1,0 +1,7 @@
+{
+  "REACT_APP_APIURL": "https://192.168.68.69:81/api/",
+  "REACT_APP_AuthURL": "https://192.168.68.69:83/api/",
+  "REACT_APP_ReportURL": "https://192.168.68.69:84/",
+  "BASENAME": "basename",
+  "BASE_URL": "https://192.168.68.69:82/"
+}

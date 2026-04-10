@@ -1,0 +1,127 @@
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace FinexAPI.Models
+{
+    [Table("ASSET_DEPRECIATION")]
+    public class Asset
+    {
+        [Column("ID")]
+        public int Id { get; set; }
+        [Column("ORG_ACCOUNT_ID")]
+        public int ORG_ID { get; set; }
+        [Column("DESCRIPTION")]
+        public string Description { get; set; }
+        [Column("PURCHASE_DATE")]
+        public DateTime PurchaseDate { get; set; }
+        [Column("USEFUL_LIFE")]
+        public int UsefulLife { get; set; }
+        [Column("COST")]
+        public decimal Cost { get; set; }
+        [Column("DEPRECIATION_AMOUNT")]
+        public decimal DepreciationAmount { get; set; }
+        [Column("ACCOUNT")]
+        public string Account { get; set; }
+        [Column("LAST_YEAR_DEPRECIATION")]
+        public DateTime LastYearDepreciation { get; set; }
+        [Column("YEAR_REMOVED")]
+        public DateTime YearRemoved { get; set; }
+        [Column("PROPERTY_NO")]
+        public string PropertyNo { get; set; }
+        [Column("SERIAL_NO")]
+        public string SerialNo { get; set; }
+        [Column("LOCATION")]
+        public string Location { get; set; }
+        [Column("INVENTORY_NO")]
+        public string InventoryNo { get; set; }
+        [Column("ITEM_DESCRIPTION")]
+        public string ItemDescription { get; set; }
+        [Column("MANUFACTURER")]
+        public string Manufacturer { get; set; }
+        [Column("FUNDING")]
+        public int Funding { get; set; }
+        [Column("SUPPLIER")]
+        public int Supplier { get; set; }
+        [Column("COLOR")]
+        public string Color { get; set; }
+        [Column("SIZE")]
+        public string Size { get; set; }
+        [Column("VOUCHER_NO")]
+        public string VoucherNo { get; set; }
+        [Column("MODEL_NO")]
+        public string ModelNo { get; set; }
+        [Column("VOUCHER_DATE")]
+        public DateTime VoucherDate { get; set; }
+        [Column("PO_NUMBER")]
+        public string PoNO { get; set; }
+        [Column("PO_DATE")]
+        public DateTime PoDate { get; set; }
+        [Column("COUNTY_NO")]
+        public string CountyNo { get; set; }
+        [Column("DATE_RECEIVED")]
+        public DateTime DateReceived { get; set; }
+        [Column("ASSET_TYPE")]
+        public int AssetType { get; set; }
+        [Column("ASSET_AREA")]
+        public int AssetArea { get; set; }
+        [Column("INSTALL_ON")]
+        public string InstallOn { get; set; }
+        [Column("SOURCE")]
+        public string Source { get; set; }
+        [Column("LEASED")]
+        public bool Leased { get; set; }
+        [Column("MANUAL")]
+        public bool Manual { get; set; }
+        [Column("ORIGINAL_DISK")]
+        public bool OriginalDisk { get; set; }
+        [Column("DISK_ON_SITE")]
+        public bool DiskOnSite { get; set; }
+        [Column("COM_CODE")]
+        public string ComCode { get; set; }
+        [Column("COMMENTS")]
+        public string Comments { get; set; }
+        [Column("OTHERS")]
+        public bool Others { get; set; }
+        [Column("REP_VALUE")]
+        public decimal RepValue { get; set; }
+        [Column("MEMO")]
+        public string Memo { get; set; }
+        [Column("PROJECT_CAC")]
+        public string ProjectCas { get; set; }
+        [Column("INACTIVE")]
+        public bool Inactive { get; set; }
+        [Column("DISPOSAL_VENDOR")]
+        public string DisposalVendor { get; set; }
+        [Column("DISPOSAL_PRICE")]
+        public decimal DisposalPrice { get; set; }
+        [Column("ASSET")]
+        public bool AssetFlag { get; set; }
+        [Column("SALVAGE_VALUE")]
+        public decimal SalvageValue { get; set; }
+        [Column("INV_CAT_ID")]
+        public int InvCatId { get; set; }
+        [Column("FIRST_YEAR_TO_DEPRECIATE")]
+        public DateTime FirstYearToDepreciate { get; set; }
+        [Column("MRDD_NO")]
+        public string MrddNo { get; set; }
+        [Column("CISCO_SERVICE_ID")]
+        public int CISCOServiceId { get; set; }
+        [Column("CISCO_CONTRACT")]
+        public string CiscoContract { get; set; }
+        [Column("CISCO_EXPIRATION_DATE")]
+        public DateTime CiscoExpirationDate { get; set; }
+        [Column("DATE_REMOVED")]
+        public DateTime DateRemoved { get; set; }
+        [Column("INVENTORY_MEMO")]
+        public string InventoryMemo { get; set; }
+        [Column("CREATED_BY")]
+        public string CreatedBy { get; set; }
+        [Column("CREATED_DATE")]
+        public DateTime CreatedDate { get; set; }
+        [Column("MODIFIED_BY")]
+        public string ModifiedBy { get; set; }
+        [Column("MODIFIED_DATE")]
+        public DateTime ModifiedDate { get; set; }
+        [NotMapped]
+        public AssetLocation? AssetLocation { get; set; }
+    }
+}

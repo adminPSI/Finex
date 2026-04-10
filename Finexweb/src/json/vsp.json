@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "leaveType": "Administrative Leave",
+    "allowEmoloyeeSelect": true,
+    "requireReason": true
+  },
+  {
+    "id": 2,
+    "leaveType": "Bereavement",
+    "allowEmoloyeeSelect": true,
+    "requireReason": true
+  },
+  {
+    "id": 3,
+    "leaveType": "Bonus Personal Used",
+    "allowEmoloyeeSelect": false,
+    "requireReason": true
+  },
+  {
+    "id": 4,
+    "leaveType": "Break",
+    "allowEmoloyeeSelect": false,
+    "requireReason": false
+  },
+  {
+    "id": 5,
+    "leaveType": "Calamity",
+    "allowEmoloyeeSelect": true,
+    "requireReason": false
+  }
+]

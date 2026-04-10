@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Remove="Controllers\EmailController.cs" />
+	  <Compile Remove="Data\AccountRevenueContext.cs" />
+	  <Compile Remove="Data\AssetContext.cs" />
+	  <Compile Remove="Data\CommonContext.cs" />
+	  <Compile Remove="Data\DocumentContext.cs" />
+	  <Compile Remove="Data\EmailContext.cs" />
+	  <Compile Remove="Data\FundContext.cs" />
+	  <Compile Remove="Data\IHACContext.cs" />
+	  <Compile Remove="Data\IHPOContext.cs" />
+	  <Compile Remove="Data\OrganizationContext.cs" />
+	  <Compile Remove="Data\PayrollContext.cs" />
+	  <Compile Remove="Data\PayrollDefaultsContext.cs" />
+	  <Compile Remove="Data\PayrollEmployeeContext.cs" />
+	  <Compile Remove="Data\ProjectContext.cs" />
+	  <Compile Remove="Data\PurchaseOrderContext.cs" />
+	  <Compile Remove="Data\StateAccountCodeContext.cs" />
+	  <Compile Remove="Data\TimecardContext.cs" />
+	  <Compile Remove="Data\VendorContext.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Data\IHACContext.cs.bak" />
+	  <None Remove="Data\PurchaseOrderContext.cs.bak" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.1" />
+		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.1" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="8.0.1" />
+		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.1" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.1" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.1">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,38 @@
+﻿using FinexAPI.Models;
+using FinexAPI.Models.IHPOs;
+using FinexAPI.Models.PurchaseOrder;
+using FinexAPI.Models.SAC;
+using Microsoft.EntityFrameworkCore;
+
+namespace FinexAPI.Data
+{
+    public class PurchaseOrderContext : DbContext
+    {
+
+        public PurchaseOrderContext(DbContextOptions<PurchaseOrderContext> options) : base(options)
+        {
+        }
+
+        public DbSet<CountyPO> CountyPO { get; set; }
+        public DbSet<CountyPOLineItem> CountyPOLineItem { get; set; }
+        public DbSet<CountyPODetails> CountyPODetails { get; set; }
+        public DbSet<CountyPOPricing> CountyPOPricing { get; set; }
+        public DbSet<POAttention> POAttention { get; set; }
+        public DbSet<POLiquidate> POLiquidate { get; set; }
+        public DbSet<PODirectInq> PODirectInq { get; set; }
+        public DbSet<PODeputy> PODeputy { get; set; }
+        public DbSet<IHPOLineItem> IHPOLineItem { get; set; }
+        public DbSet<PODeliverTo> PODeliverTo { get; set; }
+        public DbSet<CountyExpenseCode> CountryExpenseCode { get; set; }
+        
+        public DbSet<CountyTVoucher> CountyTVoucher { get; set; }
+        
+        public DbSet<Vendor> Vendor { get; set; }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+
+        }
+    }
+}
+
+

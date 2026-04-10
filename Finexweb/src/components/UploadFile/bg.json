@@ -1,0 +1,8 @@
+{
+  "upload": {
+    "cancel": "Cancel",
+    "dropFilesHere": "Drop file here to upload",
+    "select": "Select file...",
+    "headerStatusUploaded": "Completed"
+  }
+}

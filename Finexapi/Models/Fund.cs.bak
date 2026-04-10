@@ -1,0 +1,44 @@
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace FinexAPI.Models
+{
+    [Table("FUND")]
+    public class Fund
+    {
+        [Column("FUND_ID")]
+        public int id { get; set; }
+
+        [Column("ORG_ACCOUNT_ID")]
+        public int ORG_ID { get; set; }
+    
+        [Column("CODE")]
+        public string fundCode{ get; set; }
+     
+        [Column("DESCRIPTION")]
+        public string fundName{ get; set; }
+
+        [Column("START_DATE")]
+        public DateTime activeDate { get; set; }
+        
+        [Column("END_DATE")]
+        public DateTime inactiveDate { get; set; }
+
+        [Column("ACTIVE_IND")]
+        public char active_ind { get; set; }
+
+        [Column("CREATED_DATE")]
+        public DateTime CreatedDate { get; set; }
+
+        [Column("CREATED_BY")]
+        public string CreatedBy { get; set; }
+
+        [Column("MODIFIED_DATE")]
+        public DateTime ModifiedDate { get; set; }
+
+        [Column("MODIFIED_BY")]
+        public string ModifiedBy { get; set; }
+
+        //public List<CashBalance> cashBalances { get; set; }
+
+    }
+}

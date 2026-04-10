@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "holidayDate": "12/26/2024",
+    "holidayName": "Winter Break"
+  },
+  {
+    "id": 2,
+    "holidayDate": "12/25/2024",
+    "holidayName": "Winter Break"
+  },
+  {
+    "id": 3,
+    "holidayDate": "11/22/2024",
+    "holidayName": "Thanksgiving Break - Bonus Day"
+  },
+  {
+    "id": 4,
+    "holidayDate": "11/21/2024",
+    "holidayName": "Thanksgiving Day"
+  },
+  {
+    "id": 5,
+    "holidayDate": "11/21/2024",
+    "holidayName": "Veterans Day"
+  }
+]

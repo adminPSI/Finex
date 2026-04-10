@@ -1,0 +1,47 @@
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace FinexAPI.Models
+{
+    [Table("PROJECT_EQUIPMENT_SETUP")]
+    public class ProjectEquipmentSetup
+    {
+        [Column("ID")]
+        public int Id { get; set; }
+
+        [Column("ORG_ACCOUNT_ID")]
+        public int ORG_ID { get; set; }
+
+        [Column("NAME")]
+        public string Name { get; set; }
+
+        [Column("INACTIVE")]
+        public bool Inactive { get; set; }
+
+        [Column("HOURLY_RATE")]
+        public decimal HourlyRate { get; set; }
+
+        [Column("START_DATE")]
+        public DateTime StartDate { get; set; }
+
+        [Column("END_DATE")]
+        public DateTime EndDate { get; set; }
+
+        [Column("NOTES")]
+        public string Notes { get; set; }
+
+        [Column("ASSET_ID")]
+        public int AssetId { get; set; }
+
+        [Column("CREATED_BY")]
+        public string CreatedBy { get; set; }
+
+        [Column("CREATED_DATE")]
+        public DateTime CreatedDate { get; set; }
+
+        [Column("MODIFIED_BY")]
+        public string ModifiedBy { get; set; }
+
+        [Column("MODIFIED_DATE")]
+        public DateTime ModifiedDate { get; set; }
+    }
+}

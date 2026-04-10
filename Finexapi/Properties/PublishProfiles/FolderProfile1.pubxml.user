@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Sourcecode\release1\Finexapi\bin\Release\net7.0\publish\</_PublishTargetUrl>
+    <History>True|2023-11-27T00:18:07.9537228Z;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

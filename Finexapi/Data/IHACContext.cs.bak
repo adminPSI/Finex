@@ -1,0 +1,16 @@
+﻿using FinexAPI.Models;
+using Microsoft.EntityFrameworkCore;
+
+namespace FinexAPI.Data
+{
+    public class IHACContext : DbContext
+    {
+        public IHACContext(DbContextOptions<IHACContext> options) : base(options)
+        {
+        }
+
+        public DbSet<IHAC> IHACs { get; set; }
+
+
+    }
+}

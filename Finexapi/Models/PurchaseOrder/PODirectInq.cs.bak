@@ -1,0 +1,19 @@
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace FinexAPI.Models.PurchaseOrder
+{
+    [Table("PODirectInq")]
+    public class PODirectInq:Common
+    {
+        [Key]
+        [Column("ID")]
+        public int ID { get; set; }
+
+        [Column("DirectInq")]
+        public string DirectInq { get; set; }
+
+        [Column("InActive")]
+        public bool InActive { get; set; }
+    }
+}

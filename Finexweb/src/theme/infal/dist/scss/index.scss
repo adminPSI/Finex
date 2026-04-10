@@ -1,0 +1,26 @@
+@import "fonts";
+
+@import "tokens";
+
+@import "@progress/kendo-theme-bootstrap/dist/all";
+@import "overrides";
+
+.k-grid-content {
+  overflow-y: auto !important;
+}
+
+.k-grid .k-grid-header {
+  padding: 0 !important;
+}
+
+.k-menu-custom :hover {
+  background-color: #0e9384 !important;
+}
+
+@media (max-height: 800px) {
+  .k-datetime-wrap {
+    width: calc(324px + 2rem);
+    overflow-y: auto !important;
+    height: 300px !important;
+  }
+}

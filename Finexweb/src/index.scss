@@ -1,0 +1,9 @@
+@import "./theme/infal/dist/scss/";
+
+.k-scheduler-head .k-scheduler-group:nth-child(2) {
+  display: none !important;
+}
+
+.k-menu {
+  cursor: pointer;
+}

@@ -1,0 +1,33 @@
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace FinexAPI.Models
+{
+    [Table("ASSET_LOCATION")]
+    public class AssetLocation
+    {
+        [Column("ID")]
+        public int Id { get; set; }
+        [Column("ORG_ACCOUNT_ID")]
+        public int ORG_ID { get; set; }
+        [Column("ASSET_ID")]
+        public int AssetId { get; set; }
+        [Column("PROGRAM")]
+        public int Program { get; set; }
+        [Column("BUILDING")]
+        public int Building { get; set; }
+        [Column("AREA")]
+        public int Area { get; set; }
+        [Column("RES_PER")]
+        public int ResPer { get; set; }
+        [Column("INSTALlED_ON")]
+        public string InstalledOn { get; set; }
+        [Column("CREATED_BY")]
+        public string CreatedBy { get; set; }
+        [Column("CREATED_DATE")]
+        public DateTime CreatedDate { get; set; }
+        [Column("MODIFIED_BY")]
+        public string ModifiedBy { get; set; }
+        [Column("MODIFIED_DATE")]
+        public DateTime ModifiedDate { get; set; }
+    }
+}

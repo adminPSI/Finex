@@ -1,0 +1,19 @@
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace FinexAPI.Models.PurchaseOrder
+{
+    [Table("PODeputy")]
+    public class PODeputy:Common
+    {
+        [Key]
+        [Column("ID")]
+        public int ID { get; set; }
+
+        [Column("Deputy")]
+        public string Deputy { get; set; }
+
+        [Column("InActive")]
+        public bool InActive { get; set; }
+    }
+}

@@ -1,0 +1,106 @@
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace FinexAPI.Models.IHPOs
+{
+    [Table("IHPOLineItem")]
+    public class IHPOLineItem : Common
+    {
+        [Key]
+        [Column("ID")]
+        public int ID { get; set; }
+
+        [Column("ReqID")]
+        public int  ReqID { get; set; }
+
+        [Column("ReqDNumber")]
+        public string  ReqDNumber { get; set; }
+
+        [Column("ReqDQuantity")]
+        public string  ReqDQuantity { get; set; }
+
+        [Column("ReqDCatNo")]
+        public string  ReqDCatNo { get; set; }
+
+        [Column("ReqDDescription")]
+        public string  ReqDDescription { get; set; }
+
+        [Column("ReqDUnitPrice")]
+        public decimal  ReqDUnitPrice { get; set; }
+
+        [Column("ReqDDiscount")]
+        public decimal ReqDDiscount { get; set; }
+
+        [Column("ReqDTotal")]
+        public decimal ReqDTotal { get; set; }
+
+        [Column("ReqIHAC")]
+        public string  ReqIHAC { get; set; }
+
+        [Column("Balance")]
+        public decimal  Balance { get; set; }
+
+        [Column("PO")]
+        public string  PO { get; set; }
+
+        [Column("Complete")]
+        public bool  Complete { get; set; }
+
+        [Column("ApprovedBy")]
+        public string  ApprovedBy { get; set; }
+
+        [Column("ApprovedDate")]
+        public DateTime ApprovedDate { get; set; }
+
+        [Column("DateComplete")]
+        public DateTime  DateComplete { get; set; }
+
+        [Column("SAC")]
+        public string  SAC { get; set; }
+
+        [Column("VoucherAmount")]
+        public decimal  VoucherAmount { get; set; }
+
+        [Column("LineDate")]
+        public DateTime  LineDate { get; set; }
+
+        [Column("ClientID")]
+        public int  ClientID { get; set; }
+
+        [Column("FundingSourceID")]
+        public int FundingSourceID { get; set; }
+
+        [Column("ListOfOthersID")]
+        public int ListOfOthersID { get; set; }
+
+        [Column("CategoryID")]
+        public int CategoryID { get; set; }
+
+        [Column("ServiceDate")]
+        public string ServiceDate { get; set; }
+
+        [Column("UnitDesc")]
+        public string UnitDesc { get; set; }
+
+        [Column("PartNumber")]
+        public string PartNumber { get; set; }
+
+        [Column("ProjectID")]
+        public int ProjectID { get; set; }
+
+        [Column("QuantityRec")]
+        public decimal QuantityRec { get; set; }
+
+        [Column("ServiceDateEnd")]
+        public DateTime ServiceDateEnd { get; set; }
+
+        [Column("DateEntered")]
+        public DateTime DateEntered { get; set; }
+
+        [Column("EnteredBy")]
+        public int EnteredBy { get; set; }
+
+        [Column("ModifiedWhen")]
+        public int ModifiedWhen { get; set; }  
+    }
+}

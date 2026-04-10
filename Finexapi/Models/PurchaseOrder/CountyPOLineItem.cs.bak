@@ -1,0 +1,33 @@
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace FinexAPI.Models.PurchaseOrder
+{
+    [Table("CountyPOLineItem")]
+    public class CountyPOLineItem:Common
+    {
+        [Key]
+        [Column("ID")]
+        public int cID { get; set; }
+
+        [Column("POId")]
+        public int POId { get; set; }
+
+        [Column("POQuantity")]
+        public string? POQuantity { get; set; }
+
+        [Column("POLineNumber")]
+        public string? POLineNumber { get; set; }
+
+        [Column("PODescription")]
+        public string? PODescription { get; set; }
+
+        [Column("POPrice")]
+        public decimal POPrice { get; set; }
+        [Column("POAmount")]
+        public decimal POAmount { get; set; }
+
+        [Column("PODiscount")]
+        public decimal PODiscount { get; set; }
+    }
+}

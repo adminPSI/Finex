@@ -1,0 +1,31 @@
+﻿USE [Finex]
+GO
+
+/****** Object: Table [dbo].[COUNTY_REVENUE] Script Date: 1/11/2024 4:42:02 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+DROP TABLE [dbo].[COUNTY_REVENUE];
+
+
+GO
+CREATE TABLE [dbo].[COUNTY_REVENUE] (
+    [ID]              INT            IDENTITY (1, 1) NOT NULL,
+    [REV_FROM]        INT            NULL,
+    [REV_DATE]        DATETIME       NULL,
+    [REV_AMOUNT]      MONEY          NULL,
+    [REV_CHECK_NO]    NVARCHAR (25)  NULL,
+	 [REV_RECEIPT_NO]  NVARCHAR (15)  NULL,
+    [REV_DESCRIPTION] NTEXT          NULL,
+    [DATERECEIVED]    DATETIME       NULL,
+    [RECEIPTEDBYID]   INT            NULL,
+    [CREATEDBY]       NVARCHAR (100) NULL,
+    [MODIFIEDDATE]    DATETIME       NULL,
+    [MODIFIEDBY]      NVARCHAR (100) NULL,
+    [CREATEDDATE]     DATETIME       NULL
+);
+
+
